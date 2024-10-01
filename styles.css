@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+body, html {
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.logo {
+    color: #ffffff;
+    background-color: #1ea3f9;
+    border-radius: 24px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+}
+
+#date-picker {
+    color: #ffffff;
+    background-color: #1ea3f9;
+    border-radius: 24px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+#text-input {
+    color: #000b38;
+    margin: 0;
+    padding: 0px 10px 10px 10px;
+    border: 0;
+    height: 100%;
+    resize: none;
+    outline: none;
+    line-height: 1.5;
+    font-size: calc(16px + 1vw);
+}
+::selection {
+    background-color: #1ea3f9;
+    color: #ffffff;
+}
+footer{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 10;
+    display: flex;
+    gap: 0.5rem;
+    user-select: none;
+}
+footer a{
+    color: #ffffff;
+    background-color: #1ea3f9;
+    border-radius: 24px;
+    padding: 10px;
+    text-decoration: none;
+}
+footer a:hover{
+    color: #ffffff;
+    background-color: #1b96e8;
+    border-radius: 8px;
+    padding: 10px;
+    text-decoration: none;
+}
